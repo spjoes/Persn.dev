@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     images: {
-        domains: ['api.persn.dev'],
+        domains: ['api.persn.dev', 'media.forgecdn.net'],
     },
 };
 
