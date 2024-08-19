@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { FaSpotify } from 'react-icons/fa';
+import Image from 'next/image';
 
 const SpotifyNowPlaying = ({ discordID }) => {
   const [spotifyData, setSpotifyData] = useState(null);
@@ -74,7 +75,8 @@ const SpotifyNowPlaying = ({ discordID }) => {
       >
         <FaSpotify className="fill-[#1DB954] w-6 h-6 align-middle" />
         <p className="text-lg">{spotifyData.artist} - {spotifyData.song}</p>
-        <img src={spotifyData.albumArt} alt="Album Art" className="w-12 h-12 rounded-md ml-2" />
+        {/* <img src={spotifyData.albumArt} alt="Album Art" className="w-12 h-12 rounded-md ml-2" /> */}
+        <Image src={spotifyData.albumArt} alt="Album Art" width={48} height={48} className="rounded-md ml-2" />
       </div>
     </div>
   );

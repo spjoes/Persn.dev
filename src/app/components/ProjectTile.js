@@ -21,7 +21,7 @@ const ProjectTile = ({ role, projectName, projectLogo, url, className }) => {
       />
       <div className="flex flex-col">
         <span>{role}</span>
-        <span className="font-bold">{projectName}</span>
+        <span className="font-bold text-left">{projectName}</span>
       </div>
     </li>
   );
