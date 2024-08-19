@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { FaDiscord, FaTwitch, FaGithub, FaSpotify } from "react-icons/fa";
 import ProjectTile from "./components/ProjectTile";
-import CurrentTime from './components/CurrentTime';
+import CurrentTime from "./components/CurrentTime";
 import SpotifyNowPlaying from "./components/SpotifyNowPlaying";
 
 
@@ -34,7 +34,7 @@ export default function Home() {
 
 
             {/* bio */}
-            <h1 className="text-4xl mt-2" >I'm Joey (aka. Person)</h1>
+            <h1 className="text-4xl mt-2" >I&apos;m Joey (aka. Person)</h1>
             <p className="text-lg mt-3 flex flex-row gap-1">Software Engineer from Ohio <span className="text-[#46414A] flex flex-row">(<CurrentTime />)<span className="text-text">.</span></span></p>
 
             {/* divider */}
